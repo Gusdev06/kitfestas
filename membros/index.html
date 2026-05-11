@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meus Kits · Área de Membros · Kit Festas</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="kf-header">
+        <div class="container">
+            <div class="row">
+                <a class="kf-logo" href="index.html">
+                    <span class="dot">KF</span>
+                    <span>Kit Festas
+                        <small>Área de Membros</small>
+                    </span>
+                </a>
+                <div class="kf-header-actions">
+                    <span class="kf-chip-soft apple-emoji">🎉 100 Kits</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="dash-hero">
+        <div class="blob pink"></div>
+        <div class="blob gold"></div>
+        <div class="container">
+            <span class="dash-eyebrow reveal"><span class="pulse"></span> Acesso vitalício liberado</span>
+            <h1 class="dash-title reveal">Seu acervo de festa <span style="background:var(--brand);color:#fff;padding:2px 12px;border-radius:6px;">pronto para vender</span></h1>
+            <p class="dash-sub reveal">Escolha um tema abaixo, baixe os moldes, papéis digitais e imagens. Tudo organizado para você imprimir hoje e <b>entregar amanhã</b>.</p>
+
+            <div class="dash-stats reveal">
+                <div class="dash-stat">
+                    <div class="num" id="statThemes">—</div>
+                    <div class="lbl">Temas</div>
+                </div>
+                <div class="dash-stat">
+                    <div class="num" id="statPdfs">—</div>
+                    <div class="lbl">Moldes PDF</div>
+                </div>
+                <div class="dash-stat">
+                    <div class="num" id="statPapeis">—</div>
+                    <div class="lbl">Papéis digitais</div>
+                </div>
+                <div class="dash-stat">
+                    <div class="num" id="statImagens">—</div>
+                    <div class="lbl">Imagens</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dash-tools">
+        <div class="container">
+            <div class="row">
+                <div class="search-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                    <input type="text" id="search" placeholder="Buscar tema… (ex: Barbie, Mickey, Chá de Bebê)">
+                </div>
+                <div class="chip-row" id="chips"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dash-content">
+        <div class="container">
+            <div id="grid" class="themes-grid"></div>
+            <div id="emptyState" class="empty-state" style="display:none;">
+                <div class="emoji apple-emoji">🔎</div>
+                <h3 style="font-weight:900; margin-bottom:6px;">Nenhum tema encontrado</h3>
+                <p>Tente outro termo ou troque a categoria.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="kf-footer">
+        <div class="container">© Kit Festas Prontos · <b>Use à vontade</b>. Conteúdo exclusivo das alunas.</div>
+    </footer>
+
+    <script src="manifest.js"></script>
+    <script src="app.js"></script>
+    <script>
+        let state = { themes: [], filtered: [], cat: 'todas', q: '' };
+
+        function render() {
+            const grid = document.getElementById('grid');
+            const empty = document.getElementById('emptyState');
+            const q = state.q.toLowerCase().trim();
+            const filtered = state.themes.filter(t => {
+                if (state.cat !== 'todas' && t.category !== state.cat) return false;
+                if (q && !t.name.toLowerCase().includes(q)) return false;
+                return true;
+            });
+
+            grid.innerHTML = '';
+            if (filtered.length === 0) { empty.style.display = 'block'; return; }
+            empty.style.display = 'none';
+
+            const frag = document.createDocumentFragment();
+            filtered.forEach((t, i) => {
+                const card = document.createElement('a');
+                card.className = 'theme-card';
+                card.href = `tema.html?slug=${encodeURIComponent(t.slug)}`;
+                card.style.animationDelay = `${Math.min(i * 30, 400)}ms`;
+
+                const cover = document.createElement('div');
+                cover.className = 'theme-cover';
+                if (t.cover) {
+                    const img = document.createElement('img');
+                    img.src = t.cover;
+                    img.alt = t.name;
+                    img.loading = 'lazy';
+                    cover.appendChild(img);
+                } else {
+                    const ph = document.createElement('div');
+                    ph.className = 'placeholder apple-emoji';
+                    ph.textContent = '🎊';
+                    cover.appendChild(ph);
+                }
+
+                const badge = document.createElement('span');
+                if (t.counts.total === 0) {
+                    badge.className = 'theme-badge empty';
+                    badge.textContent = 'Em breve';
+                } else if (t.counts.total >= 30) {
+                    badge.className = 'theme-badge full';
+                    badge.textContent = `${t.counts.total} arquivos`;
+                } else {
+                    badge.className = 'theme-badge';
+                    badge.textContent = `${t.counts.total} arquivos`;
+                }
+                cover.appendChild(badge);
+
+                const meta = document.createElement('div');
+                meta.className = 'theme-meta';
+                meta.innerHTML = `<div class="theme-name">${t.name}</div><div class="theme-cat">${categoryLabel(t.category)}</div>`;
+
+                card.appendChild(cover);
+                card.appendChild(meta);
+                frag.appendChild(card);
+            });
+            grid.appendChild(frag);
+        }
+
+        function categoryLabel(id) {
+            const c = (KF.manifest.categories || []).find(x => x.id === id);
+            return c ? c.label : 'Outros';
+        }
+
+        function renderChips() {
+            const wrap = document.getElementById('chips');
+            wrap.innerHTML = '';
+            KF.manifest.categories.forEach(c => {
+                const b = document.createElement('button');
+                b.type = 'button';
+                b.className = 'chip' + (c.id === state.cat ? ' active' : '');
+                b.textContent = c.label;
+                b.addEventListener('click', () => { state.cat = c.id; renderChips(); render(); });
+                wrap.appendChild(b);
+            });
+        }
+
+        (async () => {
+            const m = await KF.loadManifest();
+            state.themes = m.themes;
+            document.getElementById('statThemes').textContent = KF.fmt(m.themesCount);
+            document.getElementById('statPdfs').textContent = KF.fmt(m.totals.moldesPDF || 0);
+            document.getElementById('statPapeis').textContent = KF.fmt(m.totals.papeis || 0);
+            document.getElementById('statImagens').textContent = KF.fmt(m.totals.imagens || 0);
+            renderChips();
+            render();
+            KF.reveal();
+        })();
+
+        document.getElementById('search').addEventListener('input', (e) => {
+            state.q = e.target.value; render();
+        });
+    </script>
+</body>
+
+</html>

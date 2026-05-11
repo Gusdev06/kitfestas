@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tema · Kit Festas</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="kf-header">
+        <div class="container">
+            <div class="row">
+                <a class="kf-logo" href="index.html">
+                    <span class="dot">KF</span>
+                    <span>Kit Festas
+                        <small>Área de Membros</small>
+                    </span>
+                </a>
+                <div class="kf-header-actions">
+                    <a class="kf-link" href="index.html">Todos os kits</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding-bottom: 60px;">
+        <a class="tema-back" href="index.html">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Voltar para todos os kits
+        </a>
+
+        <div id="content"></div>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+        <img id="lightboxImg" alt="">
+        <div class="lightbox-actions">
+            <a id="lightboxDownload" class="btn-cta" download>Baixar imagem</a>
+        </div>
+    </div>
+
+    <footer class="kf-footer">
+        <div class="container">© Kit Festas Prontos · <b>Use à vontade</b>. Conteúdo exclusivo das alunas.</div>
+    </footer>
+
+    <script src="manifest.js"></script>
+    <script src="app.js"></script>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const slug = params.get('slug');
+
+        function fileIcon(name) {
+            const ext = (name.split('.').pop() || '').toLowerCase();
+            if (ext === 'pdf') return { cls: 'pdf', label: 'PDF' };
+            if (ext === 'studio3' || ext === 'studio') return { cls: 'studio', label: 'STUDIO' };
+            if (ext === 'ttf' || ext === 'otf') return { cls: 'font', label: 'TTF' };
+            return { cls: 'pdf', label: ext.toUpperCase().slice(0, 6) };
+        }
+
+        function gallerySection(emoji, title, hint, items, downloadAll) {
+            const sec = document.createElement('section');
+            sec.className = 'section reveal';
+
+            const head = document.createElement('div');
+            head.className = 'section-head';
+            head.innerHTML = `
+                <div class="section-title">
+                    <span class="dot apple-emoji">${emoji}</span>
+                    <div>
+                        ${title}
+                        <small>${hint}</small>
+                    </div>
+                </div>
+                <span class="kf-chip-soft">${items.length} ${items.length === 1 ? 'arquivo' : 'arquivos'}</span>
+            `;
+            sec.appendChild(head);
+
+            if (items.length === 0) {
+                const empty = document.createElement('div');
+                empty.className = 'empty-section';
+                empty.textContent = 'Em breve — esse conteúdo será liberado em uma próxima atualização.';
+                sec.appendChild(empty);
+                return sec;
+            }
+
+            const grid = document.createElement('div');
+            grid.className = 'gallery-grid';
+            items.forEach(it => {
+                const cell = document.createElement('div');
+                cell.className = 'gallery-item';
+                cell.dataset.url = it.url;
+                cell.dataset.name = it.name;
+
+                const img = document.createElement('img');
+                img.src = it.url;
+                img.alt = it.name;
+                img.loading = 'lazy';
+
+                const dl = document.createElement('a');
+                dl.className = 'download';
+                dl.href = it.url;
+                dl.download = it.name;
+                dl.setAttribute('aria-label', `Baixar ${it.name}`);
+                dl.title = 'Baixar';
+                dl.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
+                dl.addEventListener('click', (e) => e.stopPropagation());
+
+                cell.appendChild(img);
+                cell.appendChild(dl);
+
+                cell.addEventListener('click', () => openLightbox(it.url, it.name));
+
+                grid.appendChild(cell);
+            });
+            sec.appendChild(grid);
+            return sec;
+        }
+
+        function fileListSection(emoji, title, hint, items) {
+            const sec = document.createElement('section');
+            sec.className = 'section reveal';
+
+            const head = document.createElement('div');
+            head.className = 'section-head';
+            head.innerHTML = `
+                <div class="section-title">
+                    <span class="dot apple-emoji">${emoji}</span>
+                    <div>
+                        ${title}
+                        <small>${hint}</small>
+                    </div>
+                </div>
+                <span class="kf-chip-soft">${items.length} ${items.length === 1 ? 'arquivo' : 'arquivos'}</span>
+            `;
+            sec.appendChild(head);
+
+            if (items.length === 0) {
+                const empty = document.createElement('div');
+                empty.className = 'empty-section';
+                empty.textContent = 'Em breve — esse conteúdo será liberado em uma próxima atualização.';
+                sec.appendChild(empty);
+                return sec;
+            }
+
+            const list = document.createElement('div');
+            list.className = 'file-list';
+            items.forEach(it => {
+                const row = document.createElement('div');
+                row.className = 'file-item';
+                const ico = fileIcon(it.name);
+                row.innerHTML = `
+                    <div class="ico ${ico.cls}">${ico.label}</div>
+                    <div class="name" title="${it.name}">${it.name}</div>
+                `;
+                const dl = document.createElement('a');
+                dl.className = 'download-mini';
+                dl.href = it.url;
+                dl.download = it.name;
+                dl.title = 'Baixar';
+                dl.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
+                row.appendChild(dl);
+                list.appendChild(row);
+            });
+            sec.appendChild(list);
+            return sec;
+        }
+
+        function openLightbox(url, name) {
+            const lb = document.getElementById('lightbox');
+            document.getElementById('lightboxImg').src = url;
+            const dl = document.getElementById('lightboxDownload');
+            dl.href = url; dl.setAttribute('download', name);
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+        (async () => {
+            const m = await KF.loadManifest();
+            const t = m.themes.find(x => x.slug === slug);
+            const content = document.getElementById('content');
+            if (!t) {
+                content.innerHTML = `
+                    <div class="empty-state">
+                        <div class="emoji apple-emoji">🔍</div>
+                        <h3 style="font-weight:900; margin-bottom:6px;">Tema não encontrado</h3>
+                        <p><a href="index.html" style="color:var(--brand-dark); font-weight:800;">← Voltar para o catálogo</a></p>
+                    </div>`;
+                return;
+            }
+
+            document.title = `${t.name} · Kit Festas`;
+
+            // Hero
+            const hero = document.createElement('section');
+            hero.className = 'tema-hero reveal';
+            const cover = document.createElement('div');
+            cover.className = 'tema-hero-cover';
+            if (t.cover) {
+                const img = document.createElement('img');
+                img.src = t.cover; img.alt = t.name; cover.appendChild(img);
+            } else {
+                cover.innerHTML = `<div style="display:grid;place-items:center;height:100%;font-size:4rem;" class="apple-emoji">🎊</div>`;
+            }
+            const info = document.createElement('div');
+            info.className = 'tema-hero-info';
+            info.innerHTML = `
+                <span class="eyebrow">Kit completo</span>
+                <h1>${t.name}</h1>
+                <p style="color:var(--ink-soft);">Tudo o que você precisa para montar e vender uma festa <b>${t.name}</b>: moldes em PDF, papéis digitais, imagens e a fonte original.</p>
+                <div class="tags">
+                    <span class="tema-tag"><span class="apple-emoji">📦</span><b>${t.counts.total}</b> arquivos</span>
+                    <span class="tema-tag"><span class="apple-emoji">📄</span><b>${t.counts.moldesPDF}</b> moldes PDF</span>
+                    <span class="tema-tag"><span class="apple-emoji">✂️</span><b>${t.counts.moldesStudio}</b> Silhouette</span>
+                    <span class="tema-tag"><span class="apple-emoji">🎨</span><b>${t.counts.papeis}</b> papéis</span>
+                    <span class="tema-tag"><span class="apple-emoji">🖼️</span><b>${t.counts.imagens}</b> imagens</span>
+                </div>
+            `;
+            hero.appendChild(cover);
+            hero.appendChild(info);
+            content.appendChild(hero);
+
+            content.appendChild(gallerySection('📸', 'Fotos do kit', 'Inspirações e exemplos prontos', t.fotos));
+            content.appendChild(fileListSection('📄', 'Moldes para imprimir (PDF)', 'Imprima, recorte e monte caixas, toppers e mais', t.moldesPDF));
+            content.appendChild(fileListSection('✂️', 'Moldes Silhouette / Studio', 'Para máquinas de corte (.studio3)', t.moldesStudio));
+            content.appendChild(gallerySection('🎨', 'Papéis digitais', 'Use como fundo, em embalagens, cones de doce, convites', t.papeis));
+            content.appendChild(gallerySection('🖼️', 'Imagens do tema', 'Elementos avulsos prontos para imprimir e aplicar', t.imagens));
+            content.appendChild(fileListSection('🔤', 'Fonte original', 'A tipografia usada nesse kit', t.fontes));
+
+            KF.reveal();
+        })();
+    </script>
+</body>
+
+</html>
