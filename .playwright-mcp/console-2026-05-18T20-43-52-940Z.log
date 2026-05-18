@@ -1,0 +1,104 @@
+[     439ms] [LOG] utms script loaded! 2.3.12 @ https://cdn.utmify.com.br/scripts/utms/latest.js:0
+[     444ms] [LOG] Tracker Meta version 1.6.1 @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[     444ms] [LOG] Tracker.inited?: false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[     650ms] [LOG] buttons [button.dot.active, button.dot, button.dot, button.dot, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[     666ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/tracking/v1/events:0
+[     685ms] Uncaught (in promise) TypeError: Failed to fetch
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19984)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17614)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17359)
+    at event (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19908)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30416)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28993)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28738)
+    at track (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30263)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:29852)
+    at r (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28795)
+[    4651ms] [LOG] buttons [button.dot.active, button.dot, button.dot, button.dot, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8661ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/tracking/v1/events:0
+[    8662ms] Uncaught (in promise) TypeError: Failed to fetch
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19984)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17614)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17359)
+    at event (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19908)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30416)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28993)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28738)
+    at track (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30263)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:38266)
+    at r (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:37793)
+[    8903ms] [LOG] link clicked v JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8904ms] [LOG] check is checkout link:  https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8904ms] [LOG] canSendIc true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8905ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8905ms] [LOG] canSendLead false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] canAddToCart false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] link clicked v JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] check is checkout link:  https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] canSendIc true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] canSendLead false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8906ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8907ms] [LOG] canAddToCart false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8907ms] [LOG] tracking done @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8907ms] [LOG] target JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8907ms] [LOG] insance of a el true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8907ms] [LOG] TARGET.href https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8908ms] [LOG] link clicked v JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8908ms] [LOG] check is checkout link:  https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8908ms] [LOG] canSendIc true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8908ms] [LOG] flagged event Event @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8908ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] canSendLead false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] canAddToCart false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] link clicked v JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] check is checkout link:  https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] canSendIc true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] flagged event Event @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8909ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8910ms] [LOG] canSendLead false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8910ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8910ms] [LOG] canAddToCart false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8910ms] [LOG] dispatched event Event @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8984ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/tracking/v1/events:0
+[    8984ms] [ERROR] Error tracking TypeError: Failed to fetch
+    at u.<anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:1:19985)
+    at Generator.next (<anonymous>)
+    at https://cdn.utmify.com.br/scripts/pixel/pixel.js:1:17615
+    at new Promise (<anonymous>)
+    at https://cdn.utmify.com.br/scripts/pixel/pixel.js:1:17360
+    at u.event (https://cdn.utmify.com.br/scripts/pixel/pixel.js:1:19909)
+    at h.<anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:1:30417)
+    at Generator.next (<anonymous>)
+    at https://cdn.utmify.com.br/scripts/pixel/pixel.js:1:28994
+    at new Promise (<anonymous>) @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8984ms] [LOG] target JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8985ms] [LOG] insance of a el true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8985ms] [LOG] TARGET.href https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8985ms] [LOG] link clicked v JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8985ms] [LOG] check is checkout link:  https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8985ms] [LOG] canSendIc true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8985ms] [LOG] flagged event Event @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] canSendLead false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] canAddToCart false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] link clicked v JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] check is checkout link:  https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term= @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] canSendIc true @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] flagged event Event @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] canSendLead false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] canAddToCart false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8986ms] [LOG] dispatched event Event @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    8999ms] [LOG] scrolling 8527.5 @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   10797ms] [LOG] [PostHog Session Replay] Aguardando offer... @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30
+[   11909ms] [LOG] [PostHog Session Replay] Configurando... {product_id: B2YisXB, threeds_enabled: false, threeds_retry_enabled: true, is3DSEnabled: false} @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30
+[   12718ms] [INFO] [Clarity] Script carregado com sucesso. {clarityProjectId: wmfpc4ebr9} @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30
+[   13370ms] [LOG] %s  @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30
+[   13370ms] [LOG] %s  @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30
+[   14388ms] [LOG] %s  @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30
+[   14389ms] [LOG] %s  @ https://pay.cakto.com.br/assets/index-b7ba28c7.js:30

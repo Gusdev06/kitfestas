@@ -1,0 +1,462 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: 🔥 OFERTA SOMENTE HOJE 18/05/2026
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: APENAS R$5,99
+      - heading "+3450 MOLDES DE FESTA INFANTIL PRONTOS PRA BAIXAR E IMPRIMIR" [level=1] [ref=e9]:
+        - generic [ref=e10]: "+3450"
+        - text: MOLDES DE FESTA INFANTIL PRONTOS PRA BAIXAR E IMPRIMIR
+      - paragraph [ref=e11]: Arquivos digitais prontos para imprimir e montar festas incríveis em casa.
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - text: ACESSO
+        - text: VITALÍCIO
+        - text: + 30 DIAS
+        - text: DE GARANTIA
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: de R$ 297,00
+        - paragraph [ref=e22]: A PARTIR DE
+        - paragraph [ref=e23]: R$ 5,99
+        - paragraph [ref=e24]: à vista no PIX — acesso vitalício
+        - paragraph [ref=e25]: ACESSO IMEDIATO + GARANTIA DE 30 DIAS
+        - link "QUERO BAIXAR AGORA" [ref=e26] [cursor=pointer]:
+          - /url: "#pacotes"
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - img [ref=e34]
+        - paragraph [ref=e36]: +15.000 moldes em centenas de temas diferentes
+      - generic [ref=e38]:
+        - img [ref=e40]
+        - paragraph [ref=e42]: Arquivos prontos em PDF e Studio
+      - generic [ref=e44]:
+        - img [ref=e46]
+        - paragraph [ref=e48]: Baixa no celular e no computador
+      - generic [ref=e50]:
+        - img [ref=e52]
+        - paragraph [ref=e54]: Imprime em qualquer gráfica ou impressora de casa
+      - generic [ref=e56]:
+        - img [ref=e58]
+        - paragraph [ref=e60]: Corte na tesoura ou na Silhouette
+      - generic [ref=e62]:
+        - img [ref=e64]
+        - paragraph [ref=e66]: Vídeos com passo a passo da montagem
+      - generic [ref=e68]:
+        - img [ref=e70]
+        - paragraph [ref=e72]: Manual Express de Impressão
+      - generic [ref=e74]:
+        - img [ref=e76]
+        - paragraph [ref=e78]: Pack com 50+ topos de bolo
+      - generic [ref=e80]:
+        - img [ref=e82]
+        - paragraph [ref=e84]: Acesso vitalício ao pacote
+      - generic [ref=e86]:
+        - img [ref=e88]
+        - paragraph [ref=e90]: Atualizações futuras gratuitas
+    - img "Mockup do pacote completo de Moldes Prontos" [ref=e93]
+  - generic [ref=e95]:
+    - generic [ref=e96]:
+      - heading "Como funciona?" [level=2] [ref=e97]
+      - paragraph [ref=e98]: Simples, rápido e sem complicação.
+    - generic [ref=e99]:
+      - generic [ref=e101]:
+        - generic [ref=e102]: ⚡
+        - generic [ref=e103]: PASSO 1
+        - heading "Acesso imediato" [level=3] [ref=e104]
+        - paragraph [ref=e105]: Após a compra você recebe acesso imediato ao pacote completo no seu e-mail.
+      - generic [ref=e107]:
+        - generic [ref=e108]: 👆
+        - generic [ref=e109]: PASSO 2
+        - heading "Escolha o tema" [level=3] [ref=e110]
+        - paragraph [ref=e111]: Navegue por centenas de temas de festa infantil prontos e baixa o que quiser.
+      - generic [ref=e113]:
+        - generic [ref=e114]: 🖨️
+        - generic [ref=e115]: PASSO 3
+        - heading "Imprima ou venda" [level=3] [ref=e116]
+        - paragraph [ref=e117]: Imprima em casa, na gráfica do bairro ou monte kits pra vender e lucrar.
+  - generic [ref=e120]:
+    - heading "Você quer fazer uma festa linda pro seu filho — mas tudo parece caro e complicado demais." [level=2] [ref=e121]
+    - paragraph [ref=e122]: Decoração personalizada custa uma fortuna, encomenda demora semanas e o orçamento aperta toda vez. Toda vez que você pesquisa o tema, pensa…
+    - img "Festa cara e complicada" [ref=e124]
+    - paragraph [ref=e125]: Se você se identificou com pelo menos uma dessas frases, a próxima parte é pra você.
+  - generic [ref=e128]:
+    - heading "É PRA VOCÊ QUE:" [level=2] [ref=e130]:
+      - generic [ref=e131]: "É PRA VOCÊ QUE:"
+    - generic [ref=e133]:
+      - generic [ref=e135]:
+        - generic [ref=e136]: 🎉
+        - generic [ref=e137]:
+          - paragraph [ref=e138]: QUER FAZER UMA FESTA LINDA EM CASA
+          - paragraph [ref=e139]: sem gastar uma fortuna com decoração personalizada
+      - generic [ref=e141]:
+        - generic [ref=e142]: 🎨
+        - generic [ref=e143]:
+          - paragraph [ref=e144]: NÃO SABE CRIAR ARTE
+          - paragraph [ref=e145]: e quer tudo pronto pra baixar, imprimir e montar no mesmo dia
+      - generic [ref=e147]:
+        - generic [ref=e148]: ⏰
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: TEM POUCO TEMPO PRA ORGANIZAR A FESTA
+          - paragraph [ref=e151]: e precisa de algo simples e rápido pra deixar tudo lindo
+      - generic [ref=e153]:
+        - generic [ref=e154]: 💸
+        - generic [ref=e155]:
+          - paragraph [ref=e156]: JÁ TOMOU SUSTO COM ORÇAMENTO DE FESTA
+          - paragraph [ref=e157]: tá cansada de pagar 500, 800, 1.500 reais só na decoração
+      - generic [ref=e159]:
+        - generic [ref=e160]: 💖
+        - generic [ref=e161]:
+          - paragraph [ref=e162]: QUER UMA FESTA DO TEMA QUE O FILHO AMA
+          - paragraph [ref=e163]: com qualidade profissional, gastando menos que um lanche
+      - generic [ref=e165]:
+        - generic [ref=e166]: 📱
+        - generic [ref=e167]:
+          - paragraph [ref=e168]: QUER COMEÇAR AGORA MESMO
+          - paragraph [ref=e169]: sem Silhouette, sem Canva, só com celular, impressora e tesoura
+  - generic [ref=e171]:
+    - heading "A festa ANTES e DEPOIS dos Moldes Prontos" [level=2] [ref=e173]
+    - generic [ref=e174]:
+      - img "Antes dos Moldes Prontos" [ref=e176]
+      - img "Depois dos Moldes Prontos" [ref=e178]
+      - heading "Antes dos Moldes Prontos" [level=3] [ref=e180]
+      - heading "Depois dos Moldes Prontos" [level=3] [ref=e182]
+      - generic [ref=e183]: Festa cara, simples e estressante
+      - generic [ref=e184]: Festa linda, personalizada e barata
+      - generic [ref=e185]:
+        - paragraph [ref=e186]: Custo da decoração
+        - generic [ref=e187]:
+          - generic [ref=e188]: R$ 800 a R$ 1.500
+          - generic [ref=e189]: 95%
+      - generic [ref=e191]:
+        - paragraph [ref=e192]: Custo da decoração
+        - generic [ref=e193]:
+          - generic [ref=e194]: R$ 50 a R$ 80 só com impressão
+          - generic [ref=e195]: 5%
+      - generic [ref=e197]:
+        - paragraph [ref=e198]: Variedade de temas
+        - generic [ref=e199]:
+          - generic [ref=e200]: Só o que tem na loja
+          - generic [ref=e201]: 15%
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: Variedade de temas
+        - generic [ref=e205]:
+          - generic [ref=e206]: +100 temas pra escolher
+          - generic [ref=e207]: 100%
+      - generic [ref=e209]:
+        - paragraph [ref=e210]: Tempo de espera
+        - generic [ref=e211]:
+          - generic [ref=e212]: 2 a 4 semanas pra chegar
+          - generic [ref=e213]: 20%
+      - generic [ref=e215]:
+        - paragraph [ref=e216]: Tempo de espera
+        - generic [ref=e217]:
+          - generic [ref=e218]: Baixa, imprime e pronto
+          - generic [ref=e219]: 100%
+      - generic [ref=e221]:
+        - paragraph [ref=e222]: Personalização
+        - generic [ref=e223]:
+          - generic [ref=e224]: Pacote padrão da loja
+          - generic [ref=e225]: 25%
+      - generic [ref=e227]:
+        - paragraph [ref=e228]: Personalização
+        - generic [ref=e229]:
+          - generic [ref=e230]: Do tema favorito do seu filho
+          - generic [ref=e231]: 100%
+      - generic [ref=e233]:
+        - paragraph [ref=e234]: Orgulho da festa
+        - generic [ref=e235]:
+          - generic [ref=e236]: "\"Deu pro gasto\""
+          - generic [ref=e237]: 30%
+      - generic [ref=e239]:
+        - paragraph [ref=e240]: Orgulho da festa
+        - generic [ref=e241]:
+          - generic [ref=e242]: "\"Ficou perfeita!\""
+          - generic [ref=e243]: 100%
+  - generic [ref=e246]:
+    - generic [ref=e247]:
+      - heading "Alguns dos centenas de temas que você vai receber" [level=2] [ref=e248]
+      - paragraph [ref=e249]: Tudo pronto pra baixar, imprimir, recortar e montar a festa em casa.
+    - generic [ref=e251]:
+      - img "Tema de festa infantil" [ref=e253]
+      - img "Tema de festa infantil" [ref=e255]
+      - img "Tema de festa infantil" [ref=e257]
+      - img "Tema de festa infantil" [ref=e259]
+      - img "Tema de festa infantil" [ref=e261]
+      - img "Tema de festa infantil" [ref=e263]
+      - img "Tema de festa infantil" [ref=e265]
+      - img "Tema de festa infantil" [ref=e267]
+      - img "Tema de festa infantil" [ref=e269]
+      - img "Tema de festa infantil" [ref=e271]
+      - img "Tema de festa infantil" [ref=e273]
+      - generic [ref=e274]:
+        - generic [ref=e275]: "+89"
+        - text: OUTROS
+        - text: TEMAS
+      - generic [ref=e287]:
+        - generic [ref=e288]: "+89"
+        - text: OUTROS TEMAS
+    - generic [ref=e289]:
+      - generic [ref=e290]: Homem Aranha
+      - generic [ref=e291]: Frozen
+      - generic [ref=e292]: Barbie
+      - generic [ref=e293]: Patrulha Canina
+      - generic [ref=e294]: Safari
+      - generic [ref=e295]: Mickey
+      - generic [ref=e296]: Princesas
+      - generic [ref=e297]: Sonic
+      - generic [ref=e298]: Bluey
+      - generic [ref=e299]: Jardim Encantado
+      - generic [ref=e300]: Stranger Things
+      - generic [ref=e301]: Ballet
+      - generic [ref=e302]: Sereia
+      - generic [ref=e303]: Futebol
+    - paragraph [ref=e304]: E muito mais… São tantos que nem cabem aqui — e a lista atualiza toda semana.
+  - generic [ref=e306]:
+    - generic [ref=e307]:
+      - heading "Depoimentos de Nossas Clientes" [level=2] [ref=e308]
+      - paragraph [ref=e309]: Milhares de mães já aceleraram sua produção e decoração com nossos moldes
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - img "Depoimento Cliente Natália — festa Homem-Aranha"
+          - generic:
+            - img "Depoimento Cliente Daniela — chá de bebê"
+          - generic:
+            - img "Depoimento Cliente Sirlane — festa lilás"
+          - generic:
+            - img "Depoimento Cliente Tamira — festa Looney Tunes"
+    - generic [ref=e310]:
+      - button [ref=e311] [cursor=pointer]
+      - button [ref=e312] [cursor=pointer]
+      - button [ref=e313] [cursor=pointer]
+      - button [ref=e314] [cursor=pointer]
+  - generic [ref=e316]:
+    - generic [ref=e317]:
+      - heading "COMPRANDO HOJE" [level=2] [ref=e318]
+      - paragraph [ref=e319]:
+        - generic [ref=e320]: VOCÊ LEVA TUDO ISSO DE GRAÇA
+    - generic [ref=e321]:
+      - generic [ref=e323]:
+        - generic [ref=e324]:
+          - heading "PACK DE 50+ TOPOS DE BOLO" [level=3] [ref=e325]
+          - paragraph [ref=e326]: Mais de 50 topos de bolo prontos pra você imprimir e montar em casa. Fecha a festa completa sem precisar comprar nada à parte.
+          - generic [ref=e327]:
+            - generic [ref=e328]: DE R$ 197,00
+            - generic [ref=e329]: GRÁTIS
+        - img "Pack de 50+ topos de bolo" [ref=e331]
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - heading "600 FOTOS DE INSPIRAÇÃO" [level=3] [ref=e335]
+          - paragraph [ref=e336]: Acervo com mais de 600 fotos de festas prontas pra você se inspirar na hora de organizar a mesa, o painel e a decoração do tema escolhido.
+          - generic [ref=e337]:
+            - generic [ref=e338]: DE R$ 297,00
+            - generic [ref=e339]: GRÁTIS
+        - img "600 fotos profissionais" [ref=e341]
+      - generic [ref=e343]:
+        - generic [ref=e344]:
+          - heading "VÍDEOS DE PASSO A PASSO" [level=3] [ref=e345]
+          - paragraph [ref=e346]: Aulas curtas mostrando como cortar, dobrar e montar cada peça da festa. Mesmo quem nunca pegou em tesoura consegue acompanhar.
+          - generic [ref=e347]:
+            - generic [ref=e348]: DE R$ 147,00
+            - generic [ref=e349]: GRÁTIS
+        - img "Vídeos com passo a passo" [ref=e351]
+      - generic [ref=e353]:
+        - generic [ref=e354]:
+          - heading "MANUAL EXPRESS DE IMPRESSÃO" [level=3] [ref=e355]
+          - paragraph [ref=e356]: Imprima as peças do celular ou do computador com qualidade profissional, em qualquer gráfica do bairro. Sem dor de cabeça com configuração.
+          - generic [ref=e357]:
+            - generic [ref=e358]: DE R$ 67,00
+            - generic [ref=e359]: GRÁTIS
+        - img "Manual Express de Impressão" [ref=e361]
+      - generic [ref=e363]:
+        - generic [ref=e364]:
+          - heading "SUPORTE DIRETO COM AS CRIADORAS" [level=3] [ref=e365]
+          - paragraph [ref=e366]: Acesso a tira-dúvidas com Luana e Luisa, que já ajudaram mais de 9 mil mães a montar festas em casa. Você nunca vai estar sozinha em nenhuma etapa.
+          - generic [ref=e367]:
+            - generic [ref=e368]: DE R$ 197,00
+            - generic [ref=e369]: GRÁTIS
+        - img "Suporte direto com as criadoras" [ref=e371]
+      - generic [ref=e373]:
+        - generic [ref=e374]:
+          - heading "ATUALIZAÇÕES VITALÍCIAS" [level=3] [ref=e375]
+          - paragraph [ref=e376]: Sempre que sair tema novo, kit novo ou tendência, você recebe automaticamente. Paga uma vez e tem acesso pra sempre.
+          - generic [ref=e377]:
+            - generic [ref=e378]: DE R$ 97,00
+            - generic [ref=e379]: GRÁTIS
+        - img "Atualizações Vitalícias Grátis" [ref=e381]
+    - generic [ref=e382]:
+      - generic [ref=e383]: DE R$ 1.002,00
+      - generic [ref=e384]: "por: GRÁTIS no pacote Premium"
+  - generic [ref=e386]:
+    - generic [ref=e387]:
+      - heading "Quem entrega esse pacote" [level=2] [ref=e388]
+      - paragraph [ref=e389]: Luana Gomes e Luisa Rosa
+    - generic [ref=e390]:
+      - img "Luana Gomes e Luisa Rosa" [ref=e393]
+      - generic [ref=e395]:
+        - paragraph [ref=e396]:
+          - text: Nos últimos 10 anos a gente ajudou
+          - strong [ref=e397]: mais de 9 mil mães
+          - text: a fazer festas lindas em casa — sem gastar fortuna, sem máquina cara e sem aprender programa nenhum.
+        - paragraph [ref=e398]:
+          - text: Construímos uma comunidade com
+          - strong [ref=e399]: mais de 800 mil seguidoras
+          - text: mostrando todo dia, na prática, que dá pra ter uma festa incrível personalizada gastando muito pouco.
+        - paragraph [ref=e400]: "Os Moldes Prontos são o atalho que a gente queria ter quando começou: tudo pronto pra você baixar, imprimir e montar a festa do seu filho ainda esse mês."
+        - generic [ref=e401]:
+          - generic [ref=e402]:
+            - generic [ref=e403]: +9 mil
+            - generic [ref=e404]: mães atendidas
+          - generic [ref=e405]:
+            - generic [ref=e406]: +800 mil
+            - generic [ref=e407]: seguidoras
+          - generic [ref=e408]:
+            - generic [ref=e409]: +10 anos
+            - generic [ref=e410]: de mercado
+  - generic [ref=e412]:
+    - generic [ref=e413]:
+      - heading "ESCOLHA SEU PACOTE" [level=2] [ref=e414]
+      - paragraph [ref=e415]: Pague uma vez, use pra sempre. Acesso imediato após o pagamento.
+    - generic [ref=e416]:
+      - generic [ref=e418]:
+        - heading "Pacote Básico" [level=3] [ref=e419]
+        - generic [ref=e421]: R$ 5,99
+        - paragraph [ref=e422]: Pagamento único — à vista no PIX
+        - list [ref=e423]:
+          - listitem [ref=e424]:
+            - img [ref=e425]
+            - text: +3.540 moldes de festa
+          - listitem [ref=e427]:
+            - img [ref=e428]
+            - text: Acesso imediato
+          - listitem [ref=e430]:
+            - img [ref=e431]
+            - text: Arquivos prontos pra imprimir
+          - listitem [ref=e433]:
+            - img [ref=e434]
+            - text: NÃO inclui bônus
+          - listitem [ref=e436]:
+            - img [ref=e437]
+            - text: NÃO inclui atualizações
+          - listitem [ref=e439]:
+            - img [ref=e440]
+            - text: NÃO inclui topos de bolo
+        - link "QUERO O BÁSICO" [ref=e442] [cursor=pointer]:
+          - /url: https://pay.cakto.com.br/etmvktn?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=
+      - generic [ref=e444]:
+        - generic [ref=e445]: ⭐ MAIS ESCOLHIDO
+        - heading "PACOTE PREMIUM + BÔNUS" [level=3] [ref=e446]
+        - generic [ref=e447]: "de R$ 297,00 por apenas:"
+        - generic [ref=e448]: R$ 19,90
+        - paragraph [ref=e449]: Pagamento único — à vista no PIX
+        - generic [ref=e450]: 💰 Economize mais de R$ 277 hoje
+        - list [ref=e451]:
+          - listitem [ref=e452]:
+            - img [ref=e453]
+            - strong [ref=e455]: +15.000 moldes de festa
+          - listitem [ref=e456]:
+            - img [ref=e457]
+            - text: +1.300 topos de bolo
+          - listitem [ref=e459]:
+            - img [ref=e460]
+            - text: 500 moldes editáveis no Canva
+          - listitem [ref=e462]:
+            - img [ref=e463]
+            - text: Curso Silhouette Studio
+          - listitem [ref=e465]:
+            - img [ref=e466]
+            - text: Fontes premium
+          - listitem [ref=e468]:
+            - img [ref=e469]
+            - text: Guia da festa perfeita
+          - listitem [ref=e471]:
+            - img [ref=e472]
+            - text: Temas em alta atualizados
+          - listitem [ref=e474]:
+            - img [ref=e475]
+            - text: Tutorial em vídeo com especialista
+          - listitem [ref=e477]:
+            - img [ref=e478]
+            - text: Convites, Caixa Milk, Pirâmide
+          - listitem [ref=e480]:
+            - img [ref=e481]
+            - text: Sushi, Bala, Mala personalizadas
+          - listitem [ref=e483]:
+            - img [ref=e484]
+            - text: Painéis e Centros de Mesa
+          - listitem [ref=e486]:
+            - img [ref=e487]
+            - text: Etiquetas Escolares
+          - listitem [ref=e489]:
+            - img [ref=e490]
+            - text: Suporte por E-mail e WhatsApp
+          - listitem [ref=e492]:
+            - img [ref=e493]
+            - text: Atualizações futuras gratuitas
+          - listitem [ref=e495]:
+            - img [ref=e496]
+            - text: Acesso imediato e vitalício
+          - listitem [ref=e498]:
+            - img [ref=e499]
+            - text: Garantia de 30 dias
+        - paragraph [ref=e501]: 🔥 7 a cada 10 mães escolhem esse
+        - link "🔥 QUERO TUDO LIBERADO AGORA" [ref=e502] [cursor=pointer]:
+          - /url: https://pay.cakto.com.br/so6aq54?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=
+  - generic [ref=e505]:
+    - generic [ref=e506]:
+      - generic [ref=e507]: 🔒
+      - generic [ref=e508]:
+        - text: Pagamento 100% seguro
+        - generic [ref=e509]: Pela Cakto
+    - generic [ref=e510]:
+      - generic [ref=e511]: 🛡️
+      - generic [ref=e512]:
+        - text: Garantia de 30 dias
+        - generic [ref=e513]: Devolução sem burocracia
+    - generic [ref=e514]:
+      - generic [ref=e515]: ♾️
+      - generic [ref=e516]:
+        - text: Acesso vitalício
+        - generic [ref=e517]: Paga 1x, usa pra sempre
+    - generic [ref=e518]:
+      - generic [ref=e519]: 📩
+      - generic [ref=e520]:
+        - text: Acesso imediato
+        - generic [ref=e521]: Chega no seu e-mail
+  - generic [ref=e525]:
+    - generic [ref=e526]:
+      - text: GARANTIA
+      - text: 30 DIAS
+    - heading "Garantia incondicional de 30 dias" [level=2] [ref=e527]
+    - paragraph [ref=e528]: Compra os Moldes Prontos, abre o pacote, vê os temas, vê as fotos. Se não fizer sentido pra você, manda um e-mail dentro de 30 dias e devolvemos 100% do seu dinheiro. Sem pergunta, sem burocracia, sem complicação.
+    - paragraph [ref=e530]: Você não precisa criar arte do zero. Só precisa baixar, imprimir, recortar e montar a festa que já tá pronta.
+  - generic [ref=e532]:
+    - heading "Perguntas frequentes" [level=2] [ref=e533]
+    - generic [ref=e534]:
+      - generic [ref=e535]:
+        - heading "Eu nunca fiz festa em casa. Vou conseguir?" [level=3] [ref=e536]
+        - paragraph [ref=e537]: Sim. O pacote é feito justamente pra quem nunca pegou em tesoura nem mexeu em programa de design. Tudo que você precisa fazer é abrir o arquivo, mandar imprimir, recortar e montar.
+      - generic [ref=e538]:
+        - heading "Funciona no celular ou só no computador?" [level=3] [ref=e539]
+        - paragraph [ref=e540]: Funciona nos dois. Os arquivos abrem direto no celular e no computador. A maioria das nossas clientes usa só o celular mesmo pra mandar pra gráfica.
+      - generic [ref=e541]:
+        - heading "Preciso de Silhouette ou alguma máquina cara?" [level=3] [ref=e542]
+        - paragraph [ref=e543]: Não precisa. Tesoura comum resolve. Se você já tem Silhouette, melhor ainda — os arquivos já vêm no formato Studio também.
+      - generic [ref=e544]:
+        - heading "Quanto custa pra imprimir uma festa completa?" [level=3] [ref=e545]
+        - paragraph [ref=e546]: Em média de R$ 50 a R$ 80 numa gráfica do bairro pra ter mesa, painel, lembrancinhas, topo de bolo e tudo personalizado. Bem mais barato que comprar decoração pronta.
+      - generic [ref=e547]:
+        - heading "Como vou receber o material?" [level=3] [ref=e548]
+        - paragraph [ref=e549]: Assim que o pagamento for confirmado, chega um e-mail automático com o login e a senha pra você acessar tudo. Acesso vitalício, paga uma vez só.
+      - generic [ref=e550]:
+        - heading "O pagamento é seguro?" [level=3] [ref=e551]
+        - paragraph [ref=e552]: Totalmente. A compra é processada pela Cakto, plataforma de pagamento confiável. Aceita PIX e cartão.
+  - contentinfo [ref=e553]
+  - status [ref=e554]:
+    - generic [ref=e555]: F
+    - generic [ref=e556]:
+      - generic [ref=e557]: Fernanda
+      - generic [ref=e558]: Comprou o Pacote Premium
+      - generic [ref=e561]: há 1 min
+  - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓

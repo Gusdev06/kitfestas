@@ -1,0 +1,48 @@
+[     420ms] [LOG] utms script loaded! 2.3.12 @ https://cdn.utmify.com.br/scripts/utms/latest.js:0
+[     421ms] [LOG] Tracker Meta version 1.6.1 @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[     422ms] [LOG] Tracker.inited?: false @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    2126ms] [LOG] buttons [button.dot.active, button.dot, button.dot, button.dot, button.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    2132ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/tracking/v1/events:0
+[    2142ms] Uncaught (in promise) TypeError: Failed to fetch
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19984)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17614)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17359)
+    at event (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19908)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30416)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28993)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28738)
+    at track (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30263)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:29852)
+    at r (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28795)
+[    6127ms] [LOG] buttons [button.dot, button.dot.active, button.dot, button.dot, button.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7003ms] [LOG] button clicked pixel JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7003ms] [LOG] check can iniate checkout:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7003ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7004ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7004ms] [LOG] button clicked pixel JSHandle@node @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7004ms] [LOG] check can iniate checkout:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7004ms] [LOG] check can send lead:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7004ms] [LOG] check can send add to cart:  QUERO O BÁSICO @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7111ms] [LOG] scrolling 8527.5 @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[    7131ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/tracking/v1/events:0
+[    7310ms] Uncaught (in promise) TypeError: Failed to fetch
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19984)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17614)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:17359)
+    at event (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:19908)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30416)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28993)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:28738)
+    at track (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:30263)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:38496)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:37991)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:37736)
+    at <anonymous> (https://cdn.utmify.com.br/scripts/pixel/pixel.js:0:38392)
+[   16127ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot.active, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   25282ms] [LOG] scrolling 10989 @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   30126ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot.active, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   44127ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot.active, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   58126ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot.active, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   72127ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot.active, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[   86127ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot.active, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
+[  100127ms] [LOG] buttons [button#9d458b37-f572-063e-24e0-0aecd5719471.dot, button#dcf73db7-c759-79ab-a0a4-505229f9da9d.dot, button#57337281-07e3-82fb-29a8-9832cd66a71e.dot, button#b7252707-087d-e9a9-4045-ba2d32a4ad73.dot.active, button#1404ef4b-fec3-adc7-255b-6e263d5588a8.pkg-cta.basic, button#upsellModalClose.upsell-modal__close, button#upsellModalSkip.upsell-modal__skip] @ https://cdn.utmify.com.br/scripts/pixel/pixel.js:0
