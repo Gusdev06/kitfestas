@@ -1900,6 +1900,103 @@
         }
         .bonus-value-stamp .from { color: #FFB4B4; text-decoration: line-through; font-weight: 700; font-size: 1.1rem; }
         .bonus-value-stamp .to { color: var(--gold); font-size: 1.6rem; font-weight: 900; margin-top: 4px; }
+
+        /* ===== UPSELL MODAL ===== */
+        body.modal-open { overflow: hidden; }
+        .upsell-modal-backdrop {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.72);
+            z-index: 9999; display: none; align-items: center; justify-content: center;
+            padding: 16px; backdrop-filter: blur(4px);
+            animation: modalFadeIn .25s ease;
+        }
+        .upsell-modal-backdrop.open { display: flex; }
+        @keyframes modalFadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes modalSlideIn {
+            from { opacity: 0; transform: translateY(24px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .upsell-modal {
+            background: #fff; border-radius: 22px; max-width: 520px; width: 100%;
+            max-height: 92vh; overflow-y: auto; position: relative;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            animation: modalSlideIn .35s cubic-bezier(.2,.9,.3,1.2);
+        }
+        .upsell-modal__close {
+            position: absolute; top: 12px; right: 12px; width: 38px; height: 38px;
+            border: none; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--ink);
+            cursor: pointer; font-size: 22px; line-height: 1;
+            display: flex; align-items: center; justify-content: center;
+            transition: background .2s, transform .2s; z-index: 2;
+        }
+        .upsell-modal__close:hover { background: #fff; transform: scale(1.05); }
+        .upsell-modal__head {
+            background: linear-gradient(135deg, #FF4757 0%, #E91E63 100%); color: #fff;
+            padding: 28px 22px 24px; text-align: center; border-radius: 22px 22px 0 0;
+        }
+        .upsell-modal__alert {
+            display: inline-block; background: var(--gold); color: var(--ink);
+            font-weight: 900; font-size: 0.78rem; padding: 6px 14px; border-radius: 999px;
+            letter-spacing: 0.6px; margin-bottom: 12px; text-transform: uppercase;
+        }
+        .upsell-modal__head h3 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.55rem; line-height: 1.15; margin: 0;
+        }
+        .upsell-modal__head p {
+            font-family: 'Open Sans', sans-serif; font-size: 0.95rem;
+            margin-top: 10px; opacity: 0.97;
+        }
+        .upsell-modal__body { padding: 22px; }
+        .upsell-modal__price-box {
+            background: var(--bg-soft); border: 2px dashed var(--brand);
+            border-radius: 16px; padding: 16px; text-align: center; margin-bottom: 20px;
+        }
+        .upsell-modal__price-old { color: var(--ink-soft); font-weight: 600; font-size: 0.95rem; }
+        .upsell-modal__price-old s { color: var(--red); }
+        .upsell-modal__price-new {
+            color: var(--green-dark); font-weight: 900; font-size: 2.2rem;
+            font-family: 'Bricolage Grotesque', sans-serif; line-height: 1.1; margin-top: 4px;
+        }
+        .upsell-modal__price-tag { color: var(--ink-soft); font-size: 0.82rem; margin-top: 4px; }
+        .upsell-modal__bonus-title {
+            font-weight: 900; font-size: 1.02rem; color: var(--ink); margin-bottom: 12px;
+        }
+        .upsell-modal__list {
+            list-style: none; padding: 0; margin: 0 0 20px;
+            display: grid; gap: 9px;
+        }
+        .upsell-modal__list li {
+            display: flex; gap: 8px; align-items: flex-start;
+            font-family: 'Open Sans', sans-serif; font-size: 0.92rem; color: var(--ink); line-height: 1.4;
+        }
+        .upsell-modal__list li::before {
+            content: "✓"; color: var(--green); font-weight: 900; flex-shrink: 0;
+        }
+        .upsell-modal__cta {
+            display: block; text-align: center; text-decoration: none; padding: 16px 18px;
+            border-radius: 14px; font-weight: 900; font-size: 1.05rem; letter-spacing: 0.3px;
+            background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+            color: #fff; box-shadow: 0 12px 24px rgba(0,168,71,0.35);
+            animation: pulseCta 2s infinite;
+        }
+        .upsell-modal__cta:hover { transform: translateY(-2px); }
+        .upsell-modal__skip {
+            display: block; width: 100%; text-align: center; margin-top: 14px;
+            background: none; border: none; cursor: pointer;
+            color: var(--muted); text-decoration: underline; font-size: 0.88rem;
+            font-family: 'Open Sans', sans-serif; padding: 8px;
+        }
+        .upsell-modal__skip:hover { color: var(--ink-soft); }
+        .upsell-modal__guarantee {
+            text-align: center; font-size: 0.82rem; color: var(--ink-soft);
+            margin-top: 12px; font-family: 'Open Sans', sans-serif;
+        }
+        @media (max-width: 480px) {
+            .upsell-modal__head { padding: 24px 18px 20px; }
+            .upsell-modal__head h3 { font-size: 1.3rem; }
+            .upsell-modal__price-new { font-size: 1.9rem; }
+            .upsell-modal__body { padding: 18px; }
+        }
     </style>
 
     <script>
@@ -1936,7 +2033,7 @@
                     <div style="display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;padding:10px 22px;border-radius:999px;font-size:15px;letter-spacing:0.5px;margin-bottom:20px;box-shadow:0 4px 12px rgba(245,200,66,0.35)">
                         APENAS R$5,99
                     </div>
-                    <h1><span class="num">+15.000</span> MOLDES DE FESTA INFANTIL <span style="background:linear-gradient(180deg,transparent 58%,var(--gold) 58%);padding:0 6px;border-radius:4px;">PRONTOS</span> PRA BAIXAR E IMPRIMIR</h1>
+                    <h1><span class="num">+3450</span> MOLDES DE FESTA INFANTIL <span style="background:linear-gradient(180deg,transparent 58%,var(--gold) 58%);padding:0 6px;border-radius:4px;">PRONTOS</span> PRA BAIXAR E IMPRIMIR</h1>
                     <p class="subtitle" style="color:var(--ink-soft);margin-top:16px">Arquivos digitais prontos para imprimir e montar festas incríveis em casa.</p>
                 </div>
             </div>
@@ -2584,7 +2681,7 @@
                             <li class="off"><svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>NÃO inclui atualizações</li>
                             <li class="off"><svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>NÃO inclui topos de bolo</li>
                         </ul>
-                        <a href="https://pay.cakto.com.br/et8p6j6" class="pkg-cta basic">QUERO O BÁSICO</a>
+                        <a href="https://pay.cakto.com.br/etmvktn" class="pkg-cta basic">QUERO O BÁSICO</a>
                     </div>
                 </div>
 
@@ -2792,8 +2889,82 @@
                 }, { threshold: 0.2 });
                 baObserver.observe(baSection);
             }
+
+            // ===== UPSELL MODAL =====
+            var upsellModal = document.getElementById('upsellModal');
+            var basicCta = document.querySelector('.pkg-cta.basic');
+            if (upsellModal && basicCta) {
+                var closeBtn = document.getElementById('upsellModalClose');
+                var skipBtn = document.getElementById('upsellModalSkip');
+                var basicHref = basicCta.getAttribute('href');
+
+                function openUpsell(e) {
+                    if (e) e.preventDefault();
+                    upsellModal.classList.add('open');
+                    document.body.classList.add('modal-open');
+                }
+                function closeUpsell() {
+                    upsellModal.classList.remove('open');
+                    document.body.classList.remove('modal-open');
+                }
+                function goBasic() {
+                    closeUpsell();
+                    window.location.href = basicHref;
+                }
+
+                basicCta.addEventListener('click', openUpsell);
+                closeBtn.addEventListener('click', closeUpsell);
+                skipBtn.addEventListener('click', goBasic);
+                upsellModal.addEventListener('click', function (e) {
+                    if (e.target === upsellModal) closeUpsell();
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape' && upsellModal.classList.contains('open')) closeUpsell();
+                });
+            }
         });
     </script>
+
+    <!-- UPSELL MODAL -->
+    <div class="upsell-modal-backdrop" id="upsellModal" role="dialog" aria-modal="true" aria-labelledby="upsellModalTitle">
+        <div class="upsell-modal">
+            <button type="button" class="upsell-modal__close" id="upsellModalClose" aria-label="Fechar">×</button>
+            <div class="upsell-modal__head">
+                <span class="upsell-modal__alert">⚡ Oferta exclusiva — só agora</span>
+                <h3 id="upsellModalTitle">ESPERA! Antes de finalizar 🎁</h3>
+                <p>Libere o <strong>PACOTE PREMIUM COMPLETO</strong> com um desconto especial só pra você 👇</p>
+            </div>
+            <div class="upsell-modal__body">
+                <div class="upsell-modal__price-box">
+                    <div class="upsell-modal__price-old">Pacote Premium <s>R$ 19,90</s></div>
+                    <div class="upsell-modal__price-new">R$ 15,90</div>
+                    <div class="upsell-modal__price-tag">Pagamento único — à vista no PIX</div>
+                </div>
+                <div class="upsell-modal__bonus-title">🎁 Tudo que você leva no Premium:</div>
+                <ul class="upsell-modal__list">
+                    <li><strong>+15.000 moldes de festa</strong> (mais de 4x o básico)</li>
+                    <li>+1.300 topos de bolo</li>
+                    <li>500 moldes editáveis no Canva</li>
+                    <li>Curso Silhouette Studio</li>
+                    <li>Fontes premium</li>
+                    <li>Guia da festa perfeita</li>
+                    <li>Temas em alta atualizados</li>
+                    <li>Tutorial em vídeo com especialista</li>
+                    <li>Convites, Caixa Milk, Pirâmide</li>
+                    <li>Sushi, Bala, Mala personalizadas</li>
+                    <li>Painéis e Centros de Mesa</li>
+                    <li>Etiquetas Escolares</li>
+                    <li>Suporte por E-mail e WhatsApp</li>
+                    <li>Atualizações futuras gratuitas</li>
+                    <li>Acesso imediato e vitalício</li>
+                    <li>Garantia de 30 dias</li>
+                </ul>
+                <a href="https://pay.cakto.com.br/5y9d4j8" class="upsell-modal__cta">🔥 SIM, QUERO O PREMIUM POR R$ 15,90</a>
+                <button type="button" class="upsell-modal__skip" id="upsellModalSkip">Não, prefiro continuar com o básico de R$ 5,99</button>
+                <p class="upsell-modal__guarantee">🔒 Compra 100% segura • 30 dias de garantia</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
