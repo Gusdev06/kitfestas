@@ -835,6 +835,121 @@
             width: 26px;
         }
 
+        /* ===== BONUS ===== */
+        .bonus-section {
+            padding: 56px 0;
+            background: linear-gradient(180deg, var(--bg-soft) 0%, #fff 50%, var(--bg-soft) 100%);
+        }
+
+        .bonus-section h2 {
+            font-size: clamp(1.6rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 16px;
+            text-align: center;
+            color: var(--ink);
+        }
+
+        .bonus-section .subtitle-tag {
+            background: var(--gold);
+            color: var(--ink);
+            padding: 4px 14px;
+            font-weight: 800;
+            font-size: clamp(1.05rem, 2.5vw, 1.4rem);
+            display: inline-block;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            border-radius: 6px;
+            box-shadow: 0 6px 16px rgba(245, 200, 66, 0.35);
+        }
+
+        .bonus-list {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            max-width: 920px;
+            margin: 48px auto 0;
+        }
+
+        .bonus-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 24px;
+            background: #fff;
+            color: var(--ink);
+            box-shadow: 0 12px 30px rgba(233, 30, 99, 0.08);
+        }
+
+        @media(min-width:768px) {
+            .bonus-card {
+                flex-direction: row;
+            }
+        }
+
+        .bonus-card .info {
+            flex: 1;
+        }
+
+        .bonus-card .info h3 {
+            font-size: 1.25rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+
+        .bonus-card .info h3 span {
+            background: var(--brand);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        .bonus-card .info p {
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            line-height: 1.55;
+            margin-bottom: 18px;
+        }
+
+        .bonus-card .prices {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .bonus-card .prices .old {
+            color: var(--red);
+            text-decoration: line-through;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .bonus-card .prices .free {
+            color: var(--green);
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+
+        .bonus-card .image {
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            color: #fff;
+            font-size: 0.95rem;
+            text-align: center;
+            padding: 14px;
+            line-height: 1.25;
+            box-shadow: 0 14px 30px rgba(233, 30, 99, 0.3);
+        }
+
         /* ===== OFFER ===== */
         .offer {
             background: #fff;
@@ -1781,6 +1896,15 @@
         }
         .pkg-trend { display: flex; align-items: center; justify-content: center; gap: 6px; color: var(--brand-dark); font-size: 0.85rem; font-weight: 700; margin-top: 10px; }
 
+        /* ===== BONUS VALUE STAMP ===== */
+        .bonus-value-stamp {
+            margin: 36px auto 0; max-width: 480px;
+            background: var(--ink); color: #fff; border-radius: 18px; padding: 22px;
+            text-align: center; box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+        }
+        .bonus-value-stamp .from { color: #FFB4B4; text-decoration: line-through; font-weight: 700; font-size: 1.1rem; }
+        .bonus-value-stamp .to { color: var(--gold); font-size: 1.6rem; font-weight: 900; margin-top: 4px; }
+
         /* ===== UPSELL MODAL ===== */
         body.modal-open { overflow: hidden; }
         .upsell-modal-backdrop {
@@ -2391,6 +2515,97 @@
         </div>
     </section>
 
+    <!-- BONUS -->
+    <section class="bonus-section">
+        <div class="container">
+            <div class="reveal from-up">
+                <h2 class="text-center">COMPRANDO HOJE</h2>
+                <p class="text-center"><span class="subtitle-tag">VOCÊ LEVA TUDO ISSO DE GRAÇA</span></p>
+            </div>
+            <div class="bonus-list">
+                <div class="reveal from-right" data-delay="100">
+                    <div class="bonus-card">
+                        <div class="info">
+                            <h3><span>600 FOTOS DE INSPIRAÇÃO</span></h3>
+                            <p>Acervo com mais de 600 fotos de festas prontas pra você se inspirar na hora de
+                                organizar a mesa, o painel e a decoração do tema escolhido.</p>
+                            <div class="prices"><span class="old">DE R$ 297,00</span><span class="free">GRÁTIS</span>
+                            </div>
+                        </div>
+                        <div class="image" style="background:#fff;padding:8px;overflow:hidden;">
+                            <img src="fotos-profissionais.avif" alt="600 fotos profissionais"
+                                style="width:100%;height:100%;object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal from-left" data-delay="100">
+                    <div class="bonus-card">
+                        <div class="info">
+                            <h3><span>VÍDEOS DE PASSO A PASSO</span></h3>
+                            <p>Aulas curtas mostrando como cortar, dobrar e montar cada peça da festa. Mesmo quem nunca
+                                pegou em tesoura consegue acompanhar.</p>
+                            <div class="prices"><span class="old">DE R$ 147,00</span><span class="free">GRÁTIS</span>
+                            </div>
+                        </div>
+                        <div class="image" style="background:#fff;padding:8px;overflow:hidden;">
+                            <img src="videos-com-passo-a-passo.avif" alt="Vídeos com passo a passo"
+                                style="width:100%;height:100%;object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal from-right" data-delay="100">
+                    <div class="bonus-card">
+                        <div class="info">
+                            <h3><span>MANUAL EXPRESS DE IMPRESSÃO</span></h3>
+                            <p>Imprima as peças do celular ou do computador com qualidade profissional, em qualquer
+                                gráfica do bairro. Sem dor de cabeça com configuração.</p>
+                            <div class="prices"><span class="old">DE R$ 67,00</span><span class="free">GRÁTIS</span>
+                            </div>
+                        </div>
+                        <div class="image" style="background:#fff;padding:8px;overflow:hidden;">
+                            <img src="manual-da-impressao.avif" alt="Manual Express de Impressão"
+                                style="width:100%;height:100%;object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal from-left" data-delay="100">
+                    <div class="bonus-card">
+                        <div class="info">
+                            <h3><span>SUPORTE DIRETO COM AS CRIADORAS</span></h3>
+                            <p>Acesso a tira-dúvidas com Luana e Luisa, que já ajudaram mais de 9 mil mães a montar
+                                festas em casa. Você nunca vai estar sozinha em nenhuma etapa.</p>
+                            <div class="prices"><span class="old">DE R$ 197,00</span><span class="free">GRÁTIS</span>
+                            </div>
+                        </div>
+                        <div class="image" style="background:#fff;padding:8px;overflow:hidden;">
+                            <img src="quemsomos.png" alt="Suporte direto com as criadoras"
+                                style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal from-right" data-delay="100">
+                    <div class="bonus-card">
+                        <div class="info">
+                            <h3><span>ATUALIZAÇÕES VITALÍCIAS</span></h3>
+                            <p>Sempre que sair tema novo, kit novo ou tendência, você recebe automaticamente. Paga uma
+                                vez e tem acesso pra sempre.</p>
+                            <div class="prices"><span class="old">DE R$ 97,00</span><span class="free">GRÁTIS</span>
+                            </div>
+                        </div>
+                        <div class="image" style="background:#fff;padding:8px;overflow:hidden;">
+                            <img src="bonus-vitalicio.png" alt="Atualizações Vitalícias Grátis"
+                                style="width:100%;height:100%;object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bonus-value-stamp reveal from-up">
+                <div class="from">DE R$ 805,00</div>
+                <div class="to">por: GRÁTIS no pacote Premium</div>
+            </div>
+        </div>
+    </section>
+
     <!-- CRIADORAS -->
     <section class="creators">
         <div class="container">
@@ -2452,6 +2667,7 @@
                             <li><svg class="ico-c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>+3.540 moldes de festa</li>
                             <li><svg class="ico-c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Acesso imediato</li>
                             <li><svg class="ico-c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Arquivos prontos pra imprimir</li>
+                            <li class="off"><svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>NÃO inclui bônus</li>
                             <li class="off"><svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>NÃO inclui atualizações</li>
                         </ul>
                         <button type="button" class="pkg-cta basic" data-href="https://pay.cakto.com.br/etmvktn">QUERO O BÁSICO</button>
@@ -2462,7 +2678,7 @@
                 <div class="reveal from-right" data-delay="120">
                     <div class="pkg-card featured">
                         <span class="pkg-badge">⭐ MAIS ESCOLHIDO</span>
-                        <h3 class="pkg-title">PACOTE PREMIUM</h3>
+                        <h3 class="pkg-title">PACOTE PREMIUM + BÔNUS</h3>
                         <div class="pkg-price-old">de <s>R$ 297,00</s> por apenas:</div>
                         <div class="pkg-price">R$ 19,90</div>
                         <p class="pkg-price-note">Pagamento único — à vista no PIX</p>
